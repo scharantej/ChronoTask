@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Daily Schedule</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1>Daily Schedule</h1>
+<ul>
+{% for task, time in schedule %}
+<li>{{ task }} - {{ time }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
+
+style.css
+
+/* CSS styles for the application */
+
+body {
+font-family: Arial, sans-serif;
+}
+
+h1 {
+font-size: 24px;
+}
+
+p {
+font-size: 16px;
+}
+
+form {
+width: 50%;
+margin: 0 auto;
+}
+
+label {
+display: block;
+margin-bottom: 5px;
+}
+
+input {
+width: 100%;
+padding: 5px;
+margin-bottom: 5px;
+}
+
+input[type="submit"] {
+width: 100%;
+background-color: #008CBA;
+color: white;
+padding: 10px;
+border: none;
+border-radius: 5px;
+}
+
+ul {
+list-style-type: none;
+padding: 0;
+}
+
+li {
+margin-bottom: 5px;
+}
+
