@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task Scheduler</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1>Task Scheduler</h1>
+<p>Welcome to the Task Scheduler! Please enter your tasks, deadlines, and preferred times, and I will generate a daily schedule for you that minimizes travel time.</p>
+<form method="POST" action="/submit">
+<label for="task">Task:</label>
+<input type="text" id="task" name="task">
+<br>
+<label for="deadline">Deadline:</label>
+<input type="date" id="deadline" name="deadline">
+<br>
+<label for="preferred_time">Preferred Time:</label>
+<input type="time" id="preferred_time" name="preferred_time">
+<br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
+
+
